@@ -19,10 +19,10 @@ const PlayGame = props => {
        onPress={() => {
         navigation.navigate("GameBoard", { colors: props.colors })
       }}>
-        <Text style={[{ fontSize: 50, fontWeight: '600' }, props.colors]}>Play Game</Text>
+        <Text style={[{ fontSize: 50, fontWeight: '600' }, {color:props.colors.color}]}>Play Game</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={{ marginTop: "10%", borderBottomWidth: 1 }} onPress={() => navigation.navigate("PrivacyPolicy")}><Text style={[{ fontSize: 20 }, props.colors]}>Privacy Policy</Text></TouchableOpacity>
+      <TouchableOpacity style={{ marginTop: "10%", borderBottomWidth: 1 }} onPress={() => navigation.navigate("PrivacyPolicy")}><Text style={[{ fontSize: 20 }, {color:props.colors}]}>Privacy Policy</Text></TouchableOpacity>
     </View>
   );
 };

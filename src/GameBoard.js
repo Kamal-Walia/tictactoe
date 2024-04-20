@@ -22,7 +22,7 @@ const Row = props => {
       }, props.colors]}
       onPress={() => props.setValue(props.id)}
       disabled={!!props.disabled}>
-      <Text style={[{ fontSize: 28 }, props.colors, props.value === "X" ? {color:props.colorX} : {color:props.colorY}]}>{props.value}</Text>
+      <Text style={[{ fontSize: 28 }, props.value === "X" ? {color:props.colorX} : {color:props.colorY}]}>{props.value}</Text>
     </TouchableOpacity>
   );
 };

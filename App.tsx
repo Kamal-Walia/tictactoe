@@ -3,7 +3,7 @@
  * @flow strict-local
  */
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+// import { NewAppScreen } from '@react-native/new-app-screen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Game from './src/Game';
@@ -16,7 +16,6 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex:1}}>
       <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
@@ -29,7 +28,6 @@ const App = () => {
         <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} />
       </Stack.Navigator>
       </NavigationContainer>
-    </SafeAreaView>
   );
 };
 
